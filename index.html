@@ -37,6 +37,20 @@
               <button class="user-btn header-icon">
                 <i class="fal fa-user"></i>
               </button>
+              <ul class="user-list">
+                <li>
+                  <a
+                    type="button"
+                    data-bs-toggle="modal"
+                    data-bs-target="#loginModal"
+                  >
+                    تسجيل الدخول
+                  </a>
+                </li>
+                <li>
+                  <a href="register.html"> تسجيل جديد </a>
+                </li>
+              </ul>
             </div>
             <a href="cart.html" class="cart-link header-icon">
               <i class="fal fa-shopping-bag"></i>
@@ -412,6 +426,66 @@
       </a>
     </div>
     <!-- End Footer -->
+
+    <!-- Start Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <i class="fal fa-times"></i>
+          </button>
+          <div class="modal-body">
+            <div class="login-form">
+              <div class="login-container">
+                <div class="modal-head">
+                  <h2 class="modal-title">أهلاً بك!</h2>
+                  <p class="modal-desc">
+                    دخل بياناتك لو عندك حساب، ولو معندكش
+                    <a href="register.html">سجل حساب جديد</a>
+                  </p>
+                </div>
+                <form>
+                  <div class="form-group">
+                    <label class="form-label"> رقم الموبايل </label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      placeholder="01xxxxxxxxx"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label"> كلمة المرور </label>
+                    <input
+                      class="form-control"
+                      type="password"
+                      placeholder="*******"
+                    />
+                  </div>
+
+                  <div class="form-group checkbox">
+                    <label>
+                      <input type="checkbox" value="" />
+                      <span class="mark"></span>
+                      تذكرني
+                    </label>
+                  </div>
+                  <button type="submit" class="submit-btn">دخول</button>
+                </form>
+                <div class="forgot-password">
+                  <a href="#!">نسيت كلمة المرور؟</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Login Modal -->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
