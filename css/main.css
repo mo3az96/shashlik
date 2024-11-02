@@ -1656,4 +1656,63 @@ footer {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+}
+
+.empty-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.empty-content :last-child {
+  margin-bottom: 0;
+}
+
+.empty-icon {
+  font-size: 72px;
+  color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.empty-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #20409a;
+  margin: 0 0 20px;
+}
+
+.empty-desc {
+  font-size: 24px;
+  font-weight: 400;
+  color: #20409a;
+  margin: 0 0 35px;
+}
+
+.empty-btn {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #25a7cb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 25px;
+  min-width: 200px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 20px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+.empty-btn:focus {
+  background-color: #25a7cb;
+  color: #fff;
+}
+.empty-btn:hover {
+  background-color: #ff1f2d;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */
