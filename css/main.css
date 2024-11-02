@@ -7,6 +7,69 @@
     --header: 79.77px;
   }
 }
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/graphik/GraphikArabic-Thin.woff2") format("woff2"), url("../fonts/graphik/GraphikArabic-Thin.woff") format("woff"), url("../fonts/graphik/GraphikArabic-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/graphik/GraphikArabic-Extralight.woff2") format("woff2"), url("../fonts/graphik/GraphikArabic-Extralight.woff") format("woff"), url("../fonts/graphik/GraphikArabic-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/graphik/GraphikArabic-Light.woff2") format("woff2"), url("../fonts/graphik/GraphikArabic-Light.woff") format("woff"), url("../fonts/graphik/GraphikArabic-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/graphik/GraphikArabic-Regular.woff2") format("woff2"), url("../fonts/graphik/GraphikArabic-Regular.woff") format("woff"), url("../fonts/graphik/GraphikArabic-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/graphik/GraphikArabic-Medium.woff2") format("woff2"), url("../fonts/graphik/GraphikArabic-Medium.woff") format("woff"), url("../fonts/graphik/GraphikArabic-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/graphik/GraphikArabic-Semibold.woff2") format("woff2"), url("../fonts/graphik/GraphikArabic-Semibold.woff") format("woff"), url("../fonts/graphik/GraphikArabic-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/graphik/GraphikArabic-Bold.woff2") format("woff2"), url("../fonts/graphik/GraphikArabic-Bold.woff") format("woff"), url("../fonts/graphik/GraphikArabic-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/graphik/GraphikArabic-Super.woff2") format("woff2"), url("../fonts/graphik/GraphikArabic-Super.woff") format("woff"), url("../fonts/graphik/GraphikArabic-Super.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "graphik";
+  src: url("../fonts/graphik/GraphikArabic-Black.woff2") format("woff2"), url("../fonts/graphik/GraphikArabic-Black.woff") format("woff"), url("../fonts/graphik/GraphikArabic-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 html {
   scrollbar-width: thin;
   scrollbar-color: #20409a #f1f1f1;
@@ -14,7 +77,7 @@ html {
 }
 
 body {
-  font-family: "adapter-arabic-display", sans-serif;
+  font-family: "graphik";
   font-weight: 400;
   color: #20409a;
 }
@@ -467,7 +530,7 @@ html[dir=rtl] .form-control {
   font-size: 55px;
   color: #fff;
   font-weight: 700;
-  line-height: 1.2;
+  line-height: 1.5;
   margin: 0;
 }
 @media (max-width: 767px) {
