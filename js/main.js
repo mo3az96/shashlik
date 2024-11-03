@@ -26,4 +26,9 @@ $(document).ready(function () {
       }, 1);
     }
   });
+  /************************************ Coupon ************************************/
+  $(".coupon-trigger button").click(function (e) {
+    e.preventDefault();
+    $(".cart-coupon").slideDown();
+  });
 });
