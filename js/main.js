@@ -31,4 +31,24 @@ $(document).ready(function () {
     e.preventDefault();
     $(".cart-coupon").slideDown();
   });
+
+  /************************************ About Slider ************************************/
+  var aboutSwiper = new Swiper(".about-slider .swiper", {
+    a11y: {
+      enabled: false,
+    },
+    spaceBetween: 10,
+    // loop: true,
+    pagination: {
+      el: ".about-slider .swiper-pagination",
+      clickable: true,
+    },
+    on: {
+      init: function (swiper) {
+        lazyLoad();
+      },
+    },
+  });
+
+  Fancybox.bind("[data-fancybox]");
 });
