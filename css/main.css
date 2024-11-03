@@ -1129,6 +1129,38 @@ html[dir=rtl] .form-control {
   background-color: #ff1f2d;
 }
 
+.contact-method {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  gap: 15px;
+}
+.contact-method i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: #25a7cb;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.contact-method span {
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+.contact-method:hover i {
+  background-color: #ff1f2d;
+}
+.contact-method:hover span {
+  color: #ff1f2d;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -1656,6 +1688,12 @@ footer .socials {
 nav .socials {
   margin-inline-start: 44px;
 }
+body:has(.contact-page) .socials .social {
+  color: #20409a;
+}
+body:has(.contact-page) .socials .social:hover {
+  color: #ff1f2d;
+}
 
 footer {
   background-color: #20409a;
@@ -1714,36 +1752,6 @@ footer {
     gap: 40px;
     margin-bottom: 50px;
   }
-}
-.footer-contacts .contact-method {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  gap: 15px;
-}
-.footer-contacts .contact-method i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: #25a7cb;
-  transition: all 0.3s ease-in-out;
-}
-.footer-contacts .contact-method span {
-  color: #fff;
-  font-weight: 600;
-  transition: all 0.3s ease-in-out;
-}
-.footer-contacts .contact-method:hover i {
-  background-color: #ff1f2d;
-}
-.footer-contacts .contact-method:hover span {
-  color: #ff1f2d;
 }
 
 .copyrights {
@@ -2411,4 +2419,40 @@ footer {
   width: 100%;
   aspect-ratio: 887/400;
   display: flex;
+}
+
+body:has(.contact-page) .footer-title,
+body:has(.contact-page) .footer-desc,
+body:has(.contact-page) .footer-contacts {
+  display: none;
+}
+
+body:has(.contact-page) footer {
+  background-color: #fff;
+  color: #20409a;
+}
+
+body:has(.contact-page) .page-content {
+  padding-bottom: 0;
+}
+
+.contact-content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 85px;
+}
+@media (max-width: 767px) {
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    color: #20409a;
+  }
+}
+.contact-content .contact-method span {
+  color: #20409a;
+}
+.contact-content .contact-method:hover span {
+  color: #ff1f2d;
 }/*# sourceMappingURL=main.css.map */
