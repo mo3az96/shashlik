@@ -1511,9 +1511,12 @@ header.fixed {
 }
 @media (max-width: 767px) {
   .nav-content {
-    grid-template-columns: 1fr;
     gap: 40px;
     padding: 100px 0 50px;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
   }
 }
 
