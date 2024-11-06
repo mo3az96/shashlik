@@ -254,6 +254,14 @@ html[dir=ltr] select {
   gap: 15px;
   margin: 0 auto 45px;
 }
+.page-content .section-head {
+  margin-bottom: 80px;
+}
+@media (max-width: 767px) {
+  .page-content .section-head {
+    margin-bottom: 60px;
+  }
+}
 
 .section-title {
   display: flex;
@@ -541,7 +549,7 @@ html[dir=rtl] .form-control {
 .cart-card .radio .mark {
   background-color: #20409a;
   border-bottom: 1px solid;
-  border-color: #3753a4;
+  border-color: #4d69b9;
 }
 
 .submit-btn {
@@ -559,7 +567,7 @@ html[dir=rtl] .form-control {
   transition: all 0.3s ease-in-out;
 }
 .submit-btn:hover {
-  background-color: #20409a;
+  background-color: #ff1f2d;
   color: #fff;
 }
 
@@ -592,8 +600,8 @@ html[dir=rtl] .form-control {
 }
 
 .qty-btn {
-  height: 100%;
-  aspect-ratio: 1;
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
   border-radius: 50%;
   display: flex;
@@ -607,6 +615,10 @@ html[dir=rtl] .form-control {
 .qty-btn:hover {
   background-color: #ff1f2d;
   color: #fff;
+}
+.order-info .qty-btn {
+  width: 30px;
+  height: 30px;
 }
 
 .qty-input {
@@ -1520,12 +1532,13 @@ header.fixed {
 }
 @media (max-width: 767px) {
   .nav-content {
-    gap: 40px;
+    gap: 60px;
     padding: 100px 0 50px;
     height: 100vh;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -1583,7 +1596,9 @@ header.fixed {
 }
 @media (max-width: 767px) {
   .nav-list {
-    gap: 15px;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
   }
 }
 
@@ -1605,7 +1620,9 @@ header.fixed {
 }
 @media (max-width: 767px) {
   .nav_contacts-list {
-    gap: 20px;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
   }
 }
 .nav_contacts-list .nav_contact-method {
@@ -1618,6 +1635,8 @@ header.fixed {
   .nav_contacts-list .nav_contact-method {
     flex-direction: row;
     gap: 0;
+    align-items: center;
+    text-align: center;
   }
 }
 .nav_contacts-list .title {
@@ -1634,6 +1653,9 @@ header.fixed {
   color: #25a7cb;
 }
 @media (max-width: 767px) {
+  .nav_contacts-list .title {
+    display: none;
+  }
   .nav_contacts-list .title span {
     display: none;
   }
@@ -1700,6 +1722,12 @@ footer .socials {
 nav .socials {
   margin-inline-start: 44px;
 }
+@media (max-width: 767px) {
+  nav .socials {
+    margin: 0;
+    justify-content: center;
+  }
+}
 body:has(.contact-page) .socials .social {
   color: #20409a;
 }
@@ -1728,6 +1756,7 @@ footer {
 
 .footer-title {
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.2;
   margin: 0 0 25px;
 }
@@ -1977,6 +2006,11 @@ footer {
   justify-content: start;
   gap: 20px;
 }
+@media (max-width: 767px) {
+  .cart-table .table-product {
+    width: 100%;
+  }
+}
 .cart-table .product-img {
   width: 72px;
   aspect-ratio: 1;
@@ -2025,11 +2059,11 @@ html[dir=ltr] .cart-table .product-price {
   inset-inline-end: 0;
   padding: 0;
   font-size: 18px;
-  color: #90abf8;
+  color: #ababab;
   transition: all 0.3s ease-in-out;
 }
 .cart-table .table-remove:focus {
-  color: #90abf8;
+  color: #ababab;
 }
 .cart-table .table-remove:hover {
   color: #ff1f2d;
@@ -2217,6 +2251,11 @@ html[dir=ltr] .cart-table .product-price {
   width: 100%;
   gap: 10px;
 }
+@media (max-width: 767px) {
+  .success-btns {
+    flex-direction: column;
+  }
+}
 
 .success-btn {
   font-size: 18px;
@@ -2251,7 +2290,7 @@ html[dir=ltr] .cart-table .product-price {
 @media (max-width: 767px) {
   .success-btn {
     min-width: auto;
-    width: calc(50% - 5px);
+    width: 100%;
     font-size: 16px;
     padding: 0;
   }
