@@ -759,6 +759,11 @@ html[dir=ltr] .main-section .main-title {
 .main-section:hover .main-cover {
   transform: scale(2);
 }
+@media (max-width: 767px) {
+  .main-section .main-cover {
+    transform: scale(2);
+  }
+}
 
 .menu-grid {
   display: grid;
