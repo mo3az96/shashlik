@@ -28,12 +28,12 @@
             <i class="fal fa-bars"></i>
             <span> Main Menu </span>
           </button>
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo" aria-label="Logo">
             <img src="../images/logo.svg" class="img-contain svg" alt="logo" />
           </a>
           <div class="header-tools">
             <div class="lang-content">
-              <a href="../index.html" class="lang-link header-icon">
+              <a href="../index.html" class="lang-link header-icon" aria-label="Lang">
                 <i class="fal fa-globe"></i>
               </a>
             </div>
@@ -43,21 +43,21 @@
               </button>
               <ul class="user-list">
                 <li>
-                  <a
+                  <button
                     type="button"
                     data-bs-toggle="modal"
                     data-bs-target="#loginModal"
                     aria-label="Login Modal Trigger"
                   >
                     Login
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="register.html"> Register </a>
+                  <a href="register.html" aria-label="Register Link"> Register </a>
                 </li>
               </ul>
             </div>
-            <a href="cart.html" class="cart-link header-icon">
+            <a href="cart.html" class="cart-link header-icon" aria-label="Cart Link">
               <i class="fal fa-shopping-bag"></i>
               <span class="badge"> 0 </span>
             </a>
@@ -480,7 +480,7 @@
                   <h2 class="modal-title">Hey, you!</h2>
                   <p class="modal-desc">
                     Enter your data if you have an account, or if you don't
-                    <a href="register.html">Register a new account</a>
+                    <a href="register.html" aria-label="Register Link">Register a new account</a>
                   </p>
                 </div>
                 <form>

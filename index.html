@@ -28,12 +28,16 @@
             <i class="fal fa-bars"></i>
             <span> القائمة الرئيسية </span>
           </button>
-          <a href="index.html" class="logo">
+          <a href="index.html" class="logo" aria-label="Logo">
             <img src="images/logo.svg" class="img-contain svg" alt="logo" />
           </a>
           <div class="header-tools">
             <div class="lang-content">
-              <a href="en/index.html" class="lang-link header-icon">
+              <a
+                href="en/index.html"
+                class="lang-link header-icon"
+                aria-label="Lang"
+              >
                 <i class="fal fa-globe"></i>
               </a>
             </div>
@@ -43,21 +47,27 @@
               </button>
               <ul class="user-list">
                 <li>
-                  <a
+                  <button
                     type="button"
                     data-bs-toggle="modal"
                     data-bs-target="#loginModal"
                     aria-label="Login Modal Trigger"
                   >
                     تسجيل الدخول
-                  </a>
+                  </button>
                 </li>
                 <li>
-                  <a href="register.html"> تسجيل جديد </a>
+                  <a href="register.html" aria-label="Register Link">
+                    تسجيل جديد
+                  </a>
                 </li>
               </ul>
             </div>
-            <a href="cart.html" class="cart-link header-icon">
+            <a
+              href="cart.html"
+              class="cart-link header-icon"
+              aria-label="Cart Link"
+            >
               <i class="fal fa-shopping-bag"></i>
               <span class="badge"> 0 </span>
             </a>
@@ -79,16 +89,16 @@
           <div class="nav-content">
             <ul class="nav-list">
               <li>
-                <a href="index.html">الرئيسية</a>
+                <a href="index.html" aria-label="menu link">الرئيسية</a>
               </li>
               <li>
-                <a href="menu.html">المينيو</a>
+                <a href="menu.html" aria-label="menu link">المينيو</a>
               </li>
               <li>
-                <a href="our_story.html">قصتنا</a>
+                <a href="our_story.html" aria-label="menu link">قصتنا</a>
               </li>
               <li>
-                <a href="contact.html">اتصل بنا</a>
+                <a href="contact.html" aria-label="menu link">اتصل بنا</a>
               </li>
             </ul>
             <div class="nav-contacts">
@@ -99,7 +109,7 @@
                     <span> العنوان </span>
                   </h6>
                   <p class="value">
-                    <a href="#!" target="_blank">
+                    <a href="#!" target="_blank" aria-label="address link">
                       المنصورة - المشاية - امام بوابة حقوق
                     </a>
                     <!-- <span> المنصورة - المشاية - امام بوابة حقوق </span> -->
@@ -111,32 +121,57 @@
                     <span> ارقام التواصل </span>
                   </h6>
                   <p class="value">
-                    <a href="tel:01008555448">
+                    <a href="tel:01008555448" aria-label="telephone number">
                       <span class="en">01008555448</span>
                     </a>
-                    <a href="tel:01050407450">
+                    <a href="tel:01050407450" aria-label="telephone number">
                       <span class="en">01050407450</span>
                     </a>
-                    <a href="tel:050-2200002">
+                    <a href="tel:050-2200002" aria-label="telephone number">
                       <span class="en">050-2200002</span>
                     </a>
                   </p>
                 </div>
               </div>
               <div class="socials">
-                <a href="#!" class="social" target="_blank">
+                <a
+                  href="#!"
+                  class="social"
+                  aria-label="social link"
+                  target="_blank"
+                >
                   <i class="fab fa-tiktok"></i>
                 </a>
-                <a href="#!" class="social" target="_blank">
+                <a
+                  href="#!"
+                  class="social"
+                  aria-label="social link"
+                  target="_blank"
+                >
                   <i class="fab fa-snapchat"></i>
                 </a>
-                <a href="#!" class="social" target="_blank">
+                <a
+                  href="#!"
+                  class="social"
+                  aria-label="social link"
+                  target="_blank"
+                >
                   <i class="fab fa-facebook"></i>
                 </a>
-                <a href="#!" class="social" target="_blank">
+                <a
+                  href="#!"
+                  class="social"
+                  aria-label="social link"
+                  target="_blank"
+                >
                   <i class="fab fa-x-twitter"></i>
                 </a>
-                <a href="#!" class="social" target="_blank">
+                <a
+                  href="#!"
+                  class="social"
+                  aria-label="social link"
+                  target="_blank"
+                >
                   <i class="fab fa-instagram"></i>
                 </a>
               </div>
@@ -156,7 +191,9 @@
             <br />
             أصالة الماضي وأناقة الحاضر
           </h1>
-          <a href="category.html" class="main-btn">اطلب الآن</a>
+          <a href="category.html" class="main-btn" aria-label="order button">
+            اطلب الآن
+          </a>
         </div>
         <div class="main-cover loading-img lazy-img-parent">
           <img
@@ -205,7 +242,7 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> الشوربة </a>
+              <a href="category.html" aria-label="category link"> الشوربة </a>
             </h3>
           </div>
           <div class="category-item">
@@ -220,7 +257,9 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> المقبلات الباردة </a>
+              <a href="category.html" aria-label="category link">
+                المقبلات الباردة
+              </a>
             </h3>
           </div>
           <div class="category-item">
@@ -235,7 +274,7 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> السلطات </a>
+              <a href="category.html" aria-label="category link"> السلطات </a>
             </h3>
           </div>
           <div class="category-item">
@@ -250,7 +289,9 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> المقبلات الساخنة </a>
+              <a href="category.html" aria-label="category link">
+                المقبلات الساخنة
+              </a>
             </h3>
           </div>
           <div class="category-item">
@@ -265,7 +306,7 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> المشاوي </a>
+              <a href="category.html" aria-label="category link"> المشاوي </a>
             </h3>
           </div>
           <div class="category-item">
@@ -280,7 +321,9 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> طواجن من الفرن </a>
+              <a href="category.html" aria-label="category link">
+                طواجن من الفرن
+              </a>
             </h3>
           </div>
           <div class="category-item">
@@ -295,7 +338,9 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> فطائر من الفرن الحطب </a>
+              <a href="category.html" aria-label="category link">
+                فطائر من الفرن الحطب
+              </a>
             </h3>
           </div>
           <div class="category-item">
@@ -310,7 +355,9 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> أطباق مشوية على الفحم </a>
+              <a href="category.html" aria-label="category link">
+                أطباق مشوية على الفحم
+              </a>
             </h3>
           </div>
           <div class="category-item">
@@ -325,7 +372,9 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> الاستيكات (انجوس امريكي) </a>
+              <a href="category.html" aria-label="category link">
+                الاستيكات (انجوس امريكي)
+              </a>
             </h3>
           </div>
           <div class="category-item">
@@ -340,7 +389,9 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> الأطباق المدخنة </a>
+              <a href="category.html" aria-label="category link">
+                الأطباق المدخنة
+              </a>
             </h3>
           </div>
           <div class="category-item">
@@ -355,7 +406,9 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> الساندوتشات </a>
+              <a href="category.html" aria-label="category link">
+                الساندوتشات
+              </a>
             </h3>
           </div>
           <div class="category-item">
@@ -370,7 +423,7 @@
               />
             </a>
             <h3 class="category-title">
-              <a href="category.html"> الحلويات </a>
+              <a href="category.html" aria-label="category link"> الحلويات </a>
             </h3>
           </div>
         </div>
@@ -396,7 +449,11 @@
             عصرية تواكب العصر الحديث. كل طبق لدينا يروي قصة قديمة، ولكن بتقديم
             معاصر يناسب أذواق الحاضر
           </p>
-          <a href="our_story.html" class="about-link">
+          <a
+            href="our_story.html"
+            class="about-link"
+            aria-label="our story link"
+          >
             اكتشف المزيد عن شاشلك
           </a>
         </div>
@@ -413,33 +470,70 @@
             ما تترددش تتواصل معانا، فريقنا دايمًا جاهز يرد عليك!
           </p>
           <div class="footer-contacts">
-            <a href="tel:0502200002" class="contact-method">
+            <a
+              href="tel:0502200002"
+              class="contact-method"
+              aria-label="telephone number"
+            >
               <i class="fal fa-phone"></i>
               <span class="en">050-2200002</span>
             </a>
-            <a href="tel:01050407450" class="contact-method">
+            <a
+              href="tel:01050407450"
+              class="contact-method"
+              aria-label="telephone number"
+            >
               <i class="fal fa-mobile"></i>
               <span class="en">01050407450</span>
             </a>
-            <a href="tel:01008555448" class="contact-method">
+            <a
+              href="tel:01008555448"
+              class="contact-method"
+              aria-label="telephone number"
+            >
               <i class="fal fa-mobile"></i>
               <span class="en">01008555448</span>
             </a>
           </div>
           <div class="socials">
-            <a href="#!" class="social" target="_blank">
+            <a
+              href="#!"
+              class="social"
+              aria-label="social link"
+              target="_blank"
+            >
               <i class="fab fa-tiktok"></i>
             </a>
-            <a href="#!" class="social" target="_blank">
+            <a
+              href="#!"
+              class="social"
+              aria-label="social link"
+              target="_blank"
+            >
               <i class="fab fa-snapchat"></i>
             </a>
-            <a href="#!" class="social" target="_blank">
+            <a
+              href="#!"
+              class="social"
+              aria-label="social link"
+              target="_blank"
+            >
               <i class="fab fa-facebook"></i>
             </a>
-            <a href="#!" class="social" target="_blank">
+            <a
+              href="#!"
+              class="social"
+              aria-label="social link"
+              target="_blank"
+            >
               <i class="fab fa-x-twitter"></i>
             </a>
-            <a href="#!" class="social" target="_blank">
+            <a
+              href="#!"
+              class="social"
+              aria-label="social link"
+              target="_blank"
+            >
               <i class="fab fa-instagram"></i>
             </a>
           </div>
@@ -450,10 +544,18 @@
       </div>
     </footer>
     <div class="float-icons">
-      <a href="tel:01050407450" class="float-icon">
+      <a
+        href="tel:01050407450"
+        class="float-icon"
+        aria-label="telephone number"
+      >
         <i class="fal fa-mobile"></i>
       </a>
-      <a href="https://wa.me/201050407450" class="float-icon">
+      <a
+        href="https://wa.me/201050407450"
+        class="float-icon"
+        aria-label="whatsapp number"
+      >
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
@@ -478,7 +580,9 @@
                   <h2 class="modal-title">أهلاً بك!</h2>
                   <p class="modal-desc">
                     دخل بياناتك لو عندك حساب، ولو معندكش
-                    <a href="register.html">سجل حساب جديد</a>
+                    <a href="register.html" aria-label="Register Link"
+                      >سجل حساب جديد</a
+                    >
                   </p>
                 </div>
                 <form>
@@ -511,7 +615,9 @@
                   </button>
                 </form>
                 <div class="forgot-password">
-                  <a href="#!">نسيت كلمة المرور؟</a>
+                  <a href="#!" aria-label="forgot password"
+                    >نسيت كلمة المرور؟</a
+                  >
                 </div>
               </div>
             </div>
