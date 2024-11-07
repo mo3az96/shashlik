@@ -130,6 +130,12 @@ html[dir=ltr] body {
 }
 
 /* General Resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 * {
   outline: 0 !important;
 }
