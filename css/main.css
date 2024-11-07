@@ -1428,12 +1428,15 @@ header.fixed {
   padding-bottom: 0;
   margin-bottom: 0;
 }
-.user-content .user-list a {
+.user-content .user-list a,
+.user-content .user-list button {
+  padding: 0;
   color: #20409a;
   font-size: 14px;
   transition: all 0.3s ease-in-out;
 }
-.user-content .user-list a:hover {
+.user-content .user-list a:hover,
+.user-content .user-list button:hover {
   color: #ff1f2d;
   text-decoration: none;
 }
